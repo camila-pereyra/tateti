@@ -11,9 +11,11 @@ function App() {
   const [tablero, setTablero] = useState(Array(9).fill(null));
   const [turno, setTurno] = useState(TURNOS.X);
   const actualizarTablero = (posicion) => {
+    //actualizamos el array que contiene el estado del tablero
     const nuevoTablero = [...tablero];
     nuevoTablero[posicion] = turno;
     setTablero(nuevoTablero);
+    //actualizamos el turno
     turno === TURNOS.X ? setTurno(TURNOS.O) : setTurno(TURNOS.X);
   };
   return (
@@ -23,11 +25,12 @@ function App() {
         <div className="tablero">
           {tablero.map((_, index) => (
             <Cuadrado
-              posicion={index}
               key={index}
-              tablero={tablero}
+              index={index}
               actualizarTablero={actualizarTablero}
-            />
+            >
+              {tablero[index]}
+            </Cuadrado>
           ))}
         </div>
       </section>
