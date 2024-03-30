@@ -1,0 +1,30 @@
+h1 {
+  font-family: "Tac One", sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  letter-spacing: 6px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.tablero {
+  margin: 50px auto 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-gap: 0px;
+  gap: 10px;
+}
+.turno {
+  margin: 0;
+  text-align: center;
+}
+.turno span {
+  font-family: "Tac One", sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  letter-spacing: 6px;
+}
