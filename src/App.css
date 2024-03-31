@@ -28,3 +28,22 @@ section {
   text-align: center;
   letter-spacing: 6px;
 }
+.reseteo {
+  padding: 20px 0;
+  margin: 10px auto;
+}
+.buttonResetear {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  font-family: "Tac One", sans-serif;
+  font-size: 50px;
+  color: white;
+  border: solid 1px white;
+  background-color: transparent;
+  border-radius: 20px;
+  letter-spacing: 6px;
+}
+.buttonResetear:hover {
+  box-shadow: 3px 3px 10px white;
+}
