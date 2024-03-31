@@ -1,22 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Cuadrado from "./components/Cuadrado/Cuadrado";
-
-const TURNOS = {
-  X: "x",
-  O: "o",
-};
-
-const POSICIONES_GANADORAS = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  [0, 4, 8],
-  [2, 4, 6],
-];
+import Cuadrado from "../Cuadrado/Cuadrado.jsx";
+import { TURNOS, POSICIONES_GANADORAS } from "../constants.js";
 
 function App() {
   const [tablero, setTablero] = useState(Array(9).fill(null));
