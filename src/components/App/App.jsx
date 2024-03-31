@@ -74,13 +74,13 @@ function App() {
           <span>Ganador del juego: {turno}</span>
         )}
       </section>
-      {(ganador !== false || ganador === null) && (
-        <section className="reseteo">
-          <button className="buttonResetear" onClick={resetearJuego}>
-            Resetear juego
-          </button>
-        </section>
-      )}
+      (
+      <section className="reseteo">
+        <button className="buttonResetear" onClick={resetearJuego}>
+          Resetear juego
+        </button>
+      </section>
+      )
     </>
   );
 }
